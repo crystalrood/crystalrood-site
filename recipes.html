@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recipes — Crystal Rood</title>
+    <meta name="description" content="Recipes Crystal Rood has cooked, adapted, and wants to find again." />
+    <link rel="canonical" href="https://crystalrood.com/recipes.html" />
+    <meta property="og:title" content="Recipes — Crystal Rood" />
+    <meta property="og:description" content="Recipes cooked, adapted, and worth making again." />
+    <meta name="theme-color" content="#f1ebed" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=11" />
+    <script defer src="content.js?v=10"></script>
+    <script defer src="site.js?v=10"></script>
+  </head>
+  <body data-page="recipes">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-site-header>
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Crystal Rood, home"><span class="brand-mark" aria-hidden="true">CR</span><span>Crystal Rood</span></a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="sr-only">Open navigation</span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+          <a href="projects.html">Projects</a>
+          <a href="recipes.html" aria-current="page">Recipes</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <h1 class="sr-only">Recipes</h1>
+      <section class="archive archive--standalone shell" aria-labelledby="recipe-archive-heading">
+        <div class="archive-toolbar">
+          <h2 class="sr-only" id="recipe-archive-heading">Recipe archive</h2>
+          <div class="filter-group" data-recipe-filters aria-label="Filter recipes by meal">
+            <button type="button" class="filter-button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-button" data-filter="bread" aria-pressed="false">Bread</button>
+            <button type="button" class="filter-button" data-filter="cookies" aria-pressed="false">Cookies</button>
+            <button type="button" class="filter-button" data-filter="pizza" aria-pressed="false">Pizza</button>
+          </div>
+          <p class="result-count" data-recipe-result-count aria-live="polite"></p>
+        </div>
+        <div class="recipe-grid" data-recipe-grid><p class="loading-note">Loading recipes…</p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div><a class="brand brand--footer" href="index.html"><span class="brand-mark" aria-hidden="true">CR</span><span>Crystal Rood</span></a><p class="footer-note"><span class="footer-heart" aria-hidden="true">♥</span> Made with love.</p></div>
+        <div class="footer-links"><a href="projects.html">Projects</a><a href="recipes.html">Recipes</a><a href="about.html">About</a><a data-email-link href="mailto:hello@crystalrood.com">Email</a></div>
+        <p class="copyright">© <span data-current-year>2026</span> Crystal Rood</p>
+      </div>
+    </footer>
+  </body>
+</html>
