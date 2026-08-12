@@ -1,4 +1,4 @@
-# Crystal Rood — personal site starter
+# Crystal Rood | personal site starter
 
 A zero-build static recipe site for `crystalrood.com`. It is intentionally simple to host and maintain: HTML, CSS, and one shared JavaScript content file, with no package installation required.
 
@@ -38,12 +38,12 @@ At the DNS provider, point the apex domain to GitHub Pages and set `www` as a CN
 
 ## Files
 
-- `index.html` — home
-- `recipes.html` / `recipe.html` — archive and data-driven detail view
-- `about.html` — short about page
-- `content.js` — the content you will edit most often
-- `site.js` — rendering, filtering, navigation, and structured data
-- `styles.css` — the full visual system and responsive layout
-- `404.html`, `robots.txt`, `sitemap.xml` — launch basics
+- `index.html`: home
+- `recipes.html` / `recipe.html`: archive and data-driven detail view
+- `about.html`: short about page
+- `content.js`: the content you will edit most often
+- `site.js`: rendering, filtering, navigation, and structured data
+- `styles.css`: the full visual system and responsive layout
+- `404.html`, `robots.txt`, `sitemap.xml`: launch basics
 
 `projects.html` is currently a public “Coming soon” page. The project detail scaffold remains marked `noindex` until project content is added.

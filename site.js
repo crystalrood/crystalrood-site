@@ -163,7 +163,7 @@
   }
 
   function setPageMetadata(title, description, canonicalPath) {
-    document.title = `${title} — Crystal Rood`;
+    document.title = `${title} | Crystal Rood`;
     const descriptionTag = document.querySelector('meta[name="description"]');
     if (descriptionTag) descriptionTag.content = description;
 
@@ -195,7 +195,7 @@
     const project = projects.find((item) => item.slug === getSlug());
     if (!project) {
       container.innerHTML = notFoundMarkup("project");
-      document.title = "Project not found — Crystal Rood";
+      document.title = "Project not found | Crystal Rood";
       return;
     }
 
@@ -217,9 +217,9 @@
           <h1>${escapeHTML(project.title)}</h1>
           <p class="detail-summary">${escapeHTML(project.summary)}</p>
           <dl class="detail-meta">
-            <div><dt>Year</dt><dd>${escapeHTML(project.year || "—")}</dd></div>
-            <div><dt>Category</dt><dd>${escapeHTML(project.category || "—")}</dd></div>
-            <div><dt>Role</dt><dd>${escapeHTML(project.role || "—")}</dd></div>
+            <div><dt>Year</dt><dd>${escapeHTML(project.year || "Not listed")}</dd></div>
+            <div><dt>Category</dt><dd>${escapeHTML(project.category || "Not listed")}</dd></div>
+            <div><dt>Role</dt><dd>${escapeHTML(project.role || "Not listed")}</dd></div>
           </dl>
         </div>
         ${imageOrArtwork(project, "detail-art")}
@@ -274,7 +274,7 @@
     const recipe = recipes.find((item) => item.slug === getSlug());
     if (!recipe) {
       container.innerHTML = notFoundMarkup("recipe");
-      document.title = "Recipe not found — Crystal Rood";
+      document.title = "Recipe not found | Crystal Rood";
       return;
     }
 
