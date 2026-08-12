@@ -363,10 +363,6 @@
     document.querySelectorAll("[data-current-year]").forEach((element) => {
       element.textContent = String(new Date().getFullYear());
     });
-    const email = profile.email && profile.email !== "you@example.com" ? profile.email : "hello@crystalrood.com";
-    document.querySelectorAll("[data-email-link]").forEach((link) => {
-      link.href = `mailto:${email}`;
-    });
   }
 
   initializeMenu();
